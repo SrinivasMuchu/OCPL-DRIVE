@@ -48,6 +48,7 @@ const navigate=useNavigate()
         await updateProfile(user, {
           displayName: name,
         });
+        toast.success("successfully Registered")
         navigate("/account");
       })
       .catch((err) => {

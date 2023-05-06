@@ -41,7 +41,7 @@ const navigate=useNavigate()
     signInWithEmailAndPassword(auth, email, password)
       .then(async (res) => {
        
-        
+        toast.success("Login Successfull")
         navigate("/account");
       })
       .catch((err) => {
