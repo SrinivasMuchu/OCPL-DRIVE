@@ -19,7 +19,7 @@ function Work() {
       <div className='route'>
         <motion.div className='box-1' initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ type: 'spring', duration: 3 }}> 
+          transition={{ type: 'spring', duration: 200 }}> 
          
           <div className='box1'>
             <h3>Requirement Gathering And Analysis</h3>
@@ -34,7 +34,7 @@ function Work() {
         </motion.div>
         <motion.div className='box-2' initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ type: 'spring', duration: 3 }}> 
+          transition={{ type: 'spring', duration: 200 }}> 
          
           <div className='box2'>
             <h3>Design</h3>
@@ -49,7 +49,7 @@ function Work() {
         </motion.div>
         <motion.div className='box-1' initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ type: 'spring', duration: 3 }}>
+          transition={{ type: 'spring', duration: 200 }}>
          
           <div className='box1'>
             <h3>Implementation</h3>
@@ -63,7 +63,7 @@ function Work() {
         </motion.div>
         <motion.div className='box-2' initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ type: 'spring', duration: 3 }}> 
+          transition={{ type: 'spring', duration: 200 }}> 
          
           <div className='box2'>
             <h3>Testing</h3>
@@ -78,7 +78,7 @@ function Work() {
         </motion.div>
         <motion.div className='box-1' initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ type: 'spring', duration: 3 }}> 
+          transition={{ type: 'spring', duration: 200 }}> 
          
           <div className='box1'>
             <h3>Deployment</h3>
@@ -92,7 +92,7 @@ function Work() {
         </motion.div>
         <motion.div className='box-2' initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ type: 'spring', duration: 3 }}> 
+          transition={{ type: 'spring', duration: 200 }}> 
          
           <div className='box2'>
             <h3>Maintenance</h3>

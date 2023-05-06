@@ -49,7 +49,7 @@ function Overview() {
 <div>
 <motion.div className='cards-div' initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ type: 'spring', duration: 3 }}>
+          transition={{ type: 'spring', duration: 100 }}>
         {card.map((index) =>
 
           <Tilt key={index} className='cards' >
