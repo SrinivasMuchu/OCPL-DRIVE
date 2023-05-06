@@ -1,0 +1,56 @@
+.footer-con{
+    background-color: #151030;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.flex-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.logo{
+    width: 185px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo span{
+    font-family: orbitron;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+.policy{
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    color: white;
+    font-family: orbitron;
+}
+.policy p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.horizon{
+    border: 2px solid white;
+    width: 100%;
+}
+.copyright{
+    margin-top: 15px;
+    display: flex;
+    color: #6B7280;
+    font-family: orbitron;
+    font-size: 14px;
+    justify-content: center;
+}
+@media screen and (max-width: 700px){
+    .flex-con{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}

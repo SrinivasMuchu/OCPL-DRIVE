@@ -1,0 +1,34 @@
+.register{
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:#9a8af1 ;
+    padding-bottom: 50px;
+
+}
+.here{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 40px;
+    
+}
+.back{
+    display: flex;
+    gap: 5px;
+}
+.forward{
+    display: flex;
+    gap: 5px;
+}
+.arrows{
+    display: flex;
+    justify-content: space-between;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

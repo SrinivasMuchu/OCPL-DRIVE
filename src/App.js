@@ -1,23 +1,46 @@
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+import { useState,useEffect } from "react";
+import { auth } from "./Firebase";
+import Login from "./Components/Login/Login";
+import Register from "./Components/Register/Register";
+import Account from "./Components/Account/Account";
 import './App.css';
+import OcplPage from "./Components/OcplPage/OcplPage";
+
 
 function App() {
+  const [userName, setUserName] = useState("");
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUserName(user.displayName.toUpperCase());
+      } else setUserName("");
+    });
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    
+      <Router>
+        <Routes>
+          <Route path='/' element={<OcplPage/>}/>
+          <Route path='/register' element={<Register/>}/>
+          {/* <Route path='91.203.132.6/register' element={<Register/>}/>  */}
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/account' element={<Account name={userName}/>}/>
+        </Routes>
+      
+      </Router> 
+
+      {/* <OcplPage/> */}
+
+
+
     </div>
   );
 }

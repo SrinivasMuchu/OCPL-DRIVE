@@ -1,0 +1,69 @@
+
+.home-con{
+    margin: auto;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    background-image: url('../../assets/background-image-galaxy.gif');
+}
+.key-con{
+    display: flex;
+    justify-content: center;
+
+}
+.key{
+    width: 500px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+}
+.key:hover{
+    color: gray;
+    border: 2px solid grey;
+}
+.title{
+    padding-left: 100px;
+}
+.title h1{
+    color: #6F00FF;
+    font-size: 100px;
+    font-family: orbitron,serif;
+}
+.title p{
+    color: white;
+    font-size: 45px;
+}
+@media screen and (max-width: 1200px){
+    .title h1{
+        color: #6F00FF;
+        font-size: 80px;
+        font-family: orbitron,serif;
+    }
+    .title p{
+        color: white;
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 750px){
+    .title h1{
+        color: #6F00FF;
+        font-size: 60px;
+        font-family: orbitron,serif;
+    }
+    .title p{
+        color: white;
+        font-size: 33px;
+    }
+}
+@media screen and (max-width: 550px){
+    .title h1{
+        color: #6F00FF;
+        font-size: 45px;
+        font-family: orbitron,serif;
+    }
+    .title p{
+        color: white;
+        font-size: 25px;
+        font-weight: 300;
+    }
+}

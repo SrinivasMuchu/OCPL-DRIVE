@@ -1,0 +1,70 @@
+.contact-con{
+    background-color: black;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.contact{
+ 
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #100D25;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    font-family: sans-serif;
+
+
+}
+.contact p{
+    color: #AAA6C3;
+    font-weight: 500;
+}
+.contact h3{
+    font-family: serif;
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input{
+    background-color: #151030;
+    border: none;
+    color: 6B7280;
+    padding: 10px;
+}
+.name{
+    height: 55px;
+    border-radius: 10px;
+}
+.email{
+    height: 55px;
+    border-radius: 10px;
+}
+.message{
+    height: 150px;
+    border-radius: 10px;
+}
+label{
+    color: white;
+    font-size: 16px;
+}
+form button{
+    background-color: #151030;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: white;
+    font-weight: 700;
+
+}

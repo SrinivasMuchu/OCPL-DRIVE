@@ -1,0 +1,114 @@
+.overview{
+    background: black;
+    margin: auto;
+    width: 100%;
+}
+.overview-con{
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 85%;
+  justify-content: flex-start;
+}
+.overview-con p{
+  font-family: poppins;
+  color: #6B7280;
+}
+.overview h1{
+  font-family: poppins,serif;
+  color: white;
+  font-weight: 600;
+}
+.cards-div{
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 75px;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+  text-align: center;
+  font-weight: 600;
+  width: 200px;
+  height: 250px;
+  border: 2px solid transparent;
+  background-color: #fff;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+  border-image: linear-gradient(45deg, #00ff40, #3300ff) 1;
+  animation: border 2s linear infinite;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  color: bisque;
+
+}
+.cards{
+  background-color: #151030;
+}
+.overview-con{
+    width: 50%;
+
+}
+@keyframes border {
+    0% {
+      border-image: linear-gradient(45deg, #00ff40, #3300ff) 1;
+    }
+    25% {
+      border-image: linear-gradient(45deg, #00ff40, #6600ff) 2;
+    }
+    50% {
+      border-image: linear-gradient(45deg, #00ff40, #00ff40) 3;
+    }
+    75% {
+      border-image: linear-gradient(45deg, #00ff40, #3300ff) 4;
+    }
+    100% {
+      border-image: linear-gradient(45deg, #00ff40, #6600ff) 5;
+    }
+  }
+  @media screen and (max-width: 1350px){
+    .cards-div{
+      width: 85%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 75px;
+    }
+    .title-con{
+      width: 80%;
+    }
+
+  }
+  @media screen and (max-width: 850px){
+    .cards-div{
+      width: 85%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 75px;
+    }
+
+  }
+  @media screen and (max-width: 850px){
+    .cards-div{
+      overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    display: grid;
+    grid-gap: 1rem;
+    grid-auto-flow: column;
+ 
+    }
+    ::-webkit-scrollbar {
+      background-color: black;
+      width: 12px;
+    }
+    
+  }
