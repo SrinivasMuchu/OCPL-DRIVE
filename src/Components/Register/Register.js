@@ -25,89 +25,11 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 const theme = createTheme();
 
 export default function Register() {
-  // const [formData, setFormData] = useState({
-  //   name: '',
-  //   email: '',
-  //   phoneNumber: '',
-  //   password: '',
-  //   confirmPassword: ''
-  // });
-  // const navigate=useNavigate()
-
-  // const [nameError, setNameError] = useState('');
-  // const [emailError, setEmailError] = useState('');
-  // const [phoneError, setPhoneError] = useState('');
-  // const [passwordError, setPasswordError] = useState('');
-
-  // const handleInputChange = (e) => {
-  //   setFormData({
-  //     ...formData,
-  //     [e.target.name]: e.target.value
-  //   });
-  // };
-
-  // const handleFormSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   // Name validation: name cannot be empty and must contain only letters and spaces
-  //   if (formData.name.trim() === '') {
-  //     setNameError('Name is required');
-  //     return;
-  //   } else if (!/^[a-zA-Z ]+$/.test(formData.name.trim())) {
-  //     setNameError('Name can only contain letters and spaces');
-  //     return;
-  //   } else {
-  //     setNameError('');
-  //   }
-
-  //   // Email validation: email must be a valid email address
-  //   if (!/\S+@\S+\.\S+/.test(formData.email.trim())) {
-  //     setEmailError('Invalid email address');
-  //     return;
-  //   } else {
-  //     setEmailError('');
-  //   }
-
-  //   // Phone number validation: phone number must contain only digits and must be 10 characters long
-  //   if (!/^\d{10}$/.test(formData.phoneNumber.trim())) {
-  //     setPhoneError('Phone number must be 10 digits long');
-  //     return;
-  //   } else {
-  //     setPhoneError('');
-  //   }
-
-  //   // Password validation: password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one digit
-  //   if (formData.password.length < 8 ) {
-  //     setPasswordError('Password must be at least 8 characters long ');
-  //     return;
-  //   } else {
-  //     setPasswordError('');
-  //   }
-
-
-  //   // Save form data to local storage
-  //   localStorage.setItem('name', formData.name);
-  //   localStorage.setItem('email', formData.email);
-  //   localStorage.setItem('phoneNumber', formData.phoneNumber);
-  //   localStorage.setItem('password', formData.password);
-
-  //   toast.success('Registration successfull');
-  //   toast.success('Please Login');
-  //   navigate("/login")
-  //   // redirect to login page or perform any other action
-  //   const userDetails = {
-  //     name: formData.name,
-  //     email: formData.email,
-  //     phoneNumber: formData.phoneNumber,
-  //     password: formData.password
-  //   };
-  //   console.log(userDetails);
-  // };
 const[name,setName]=useState("")
 const[phoneNumber,setPhoneNumber]=useState("")
 const[email,setEmail]=useState("")
 const[password,setPassword]=useState("")
-  // const { registerUser } = useUserContext();
+ 
 
 
   

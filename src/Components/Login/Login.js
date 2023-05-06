@@ -23,32 +23,7 @@ import {motion} from 'framer-motion'
 const theme = createTheme();
 
 export default function Login() {
-  // const [formData, setFormData] = useState({
-  //   email: '',
-  //   password: ''
-  // });
-  // const navigate=useNavigate()
-
-  // const handleInputChange = (e) => {
-  //   setFormData({
-  //     ...formData,
-  //     [e.target.name]: e.target.value
-  //   });
-  // };
-
-  // const handleFormSubmit = (e) => {
-  //   e.preventDefault();
-  //   const storedEmail = localStorage.getItem('email');
-  //   const storedPassword = localStorage.getItem('password');
-  //   if (formData.email === storedEmail && formData.password === storedPassword) {
-  //     toast.success('Login successful!');
-  //     navigate("/account")
-  //     // login the user
-  //     // redirect to dashboard or perform any other action
-  //   } else {
-  //     toast.error('Invalid email or password!');
-  //   }
-  // };
+ 
   const[email,setEmail]=useState("")
   const[password,setPassword]=useState("")
  

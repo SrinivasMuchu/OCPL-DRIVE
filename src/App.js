@@ -14,12 +14,17 @@ import OcplPage from "./Components/OcplPage/OcplPage";
 
 function App() {
   const [userName, setUserName] = useState("");
+  const [loading,setLoading]= useState(null)
 
-  useEffect(() => {
-    auth.onAuthStateChanged((user) => {
+   useEffect(() => {
+  
+     auth.onAuthStateChanged(async(user) => {
       if (user) {
-        setUserName(user.displayName.toUpperCase());
-      } else setUserName("");
+        await setUserName(user.displayName.toUpperCase());
+        console.log(user.displayName.toUpperCase())
+      } else {
+        setUserName("");
+      }
     });
   }, []);
   return (
@@ -33,6 +38,7 @@ function App() {
           {/* <Route path='91.203.132.6/register' element={<Register/>}/>  */}
           <Route path='/login' element={<Login/>}/>
           <Route path='/account' element={<Account name={userName}/>}/>
+          
         </Routes>
       
       </Router> 

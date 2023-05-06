@@ -25,11 +25,16 @@
 .name-con{
     color: white;
 }
-.home-btn{
+.home-btn,.reload{
     background-color: #100D25;
     width: 150px;
     height: 50px;
     color: white;
     border-radius: 15px;
     border: none;
+    font-weight: 750;
+}
+.btns-bot{
+    display:flex;
+    gap:100px;
 }
